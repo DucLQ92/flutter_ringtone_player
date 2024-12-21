@@ -21,7 +21,7 @@ NSObject <FlutterPluginRegistrar> *pluginRegistrar = nil;
 
         if (call.arguments[@"uri"] != nil) {
             NSString *key = [pluginRegistrar lookupKeyForAsset:call.arguments[@"uri"]];
-            NSURL *path = [[NSBundle mainBundle] URLForResource:key withExtension:nil];
+            NSURL *path = [call.arguments[@"isFromFile"] isEqualToString:@"1"] ? [NSURL URLWithString:call.arguments[@"uri"]] : [[NSBundle mainBundle] URLForResource:key withExtension:nil];
             soundFileURLRef = CFBridgingRetain(path);
             AudioServicesCreateSystemSoundID(soundFileURLRef, &soundId);
         }

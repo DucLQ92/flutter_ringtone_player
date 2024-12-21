@@ -31,7 +31,7 @@ class MethodChannelFlutterRingtonePlayer extends FlutterRingtonePlayerPlatform {
     bool? looping,
     bool? asAlarm,
   }) async {
-    if (fromAsset == null && android == null && ios == null) {
+    if (fromAsset == null && android == null && ios == null && fromFile == null) {
       throw "Please specify the sound source.";
     }
     if (fromFile != null) {
@@ -54,6 +54,7 @@ class MethodChannelFlutterRingtonePlayer extends FlutterRingtonePlayerPlatform {
       if (looping != null) args['looping'] = looping;
       if (volume != null) args['volume'] = volume;
       if (asAlarm != null) args['asAlarm'] = asAlarm;
+      if (fromFile != null) args['isFromFile'] = '1';
 
       _channel.invokeMethod('play', args);
     } on PlatformException {
