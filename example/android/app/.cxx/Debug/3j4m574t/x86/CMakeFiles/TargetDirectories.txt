@@ -1,0 +1,2 @@
+/Users/luuquangduc/Desktop/Workspace/Flutter/libs-fork/flutter_ringtone_player/example/android/app/.cxx/Debug/3j4m574t/x86/CMakeFiles/edit_cache.dir
+/Users/luuquangduc/Desktop/Workspace/Flutter/libs-fork/flutter_ringtone_player/example/android/app/.cxx/Debug/3j4m574t/x86/CMakeFiles/rebuild_cache.dir

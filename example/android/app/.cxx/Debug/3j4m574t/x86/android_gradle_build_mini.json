@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/luuquangduc/fvm/versions/3.29.3/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/luuquangduc/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/luuquangduc/Desktop/Workspace/Flutter/libs-fork/flutter_ringtone_player/example/android/app/.cxx/Debug/3j4m574t/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/luuquangduc/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/luuquangduc/Desktop/Workspace/Flutter/libs-fork/flutter_ringtone_player/example/android/app/.cxx/Debug/3j4m574t/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
